@@ -1,138 +1,188 @@
 /* استایل کلی صفحه خانگی */
 .homecontainer {
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .homecontainer h2 {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 2.5rem;
-    font-weight: 700; /* ضخیم‌تر شدن فونت */
-    color: #7a7676; /* رنگ زرشکی */
-    border-bottom: 1px solid  #8c8a8a;
-    margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase; /* بزرگ نوشتن حروف */
-    letter-spacing: 2px; /* فاصله بین حروف */
-    position: relative; /* برای اضافه کردن افکت */
-    padding-bottom: 10px; /* فاصله برای افکت خط زیر */
-    transition: color 0.3s ease, transform 0.3s ease} /* انیمیشن برای تغییر رنگ و حرکت
-  /* استایل برای محصولات */
-  .productscontainer {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 20px;  /* فاصله بین کارت‌های محصول */
-    justify-content: space-around;  /* پخش یکنواخت محصولات */
-  }
-  .banner {
-    width: 100%; 
-    height: 400px;
-    background-image: url('../image/2-2.jpg');
-    background-size: cover; 
-    background-position: center;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    position: relative;
-    text-align: center; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-    overflow: hidden;
-    margin-bottom: 5%;
-    background-attachment: fixed;
-    z-index: -1;
-  }
-  
-  .banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* لایه شفاف روی تصویر */
-    z-index: 1;
-  }
-  
-  .bannercontent {
-    position: relative;
-    z-index: 2; /* متن بالای لایه شفاف */
-    color: white;
-    font-family: 'vazir', sans-serif; /* فونت فارسی */
-  }
-  
-  .bannercontent h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    line-height: 1.5;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* سایه متن */ 
-    
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
-  
-  .bannercontent p {
-    font-size: 1.2rem;
-    margin: 10px 0 0;
-    opacity: 0.8;
-  }
 
-/* Home.module.css */
-.filterContainer {
+.homecontainer h2 {
   width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #7a7676;
+  border-bottom: 1px solid #8c8a8a;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* استایل برای محصولات */
+.productscontainer {
   display: flex;
-
-  gap: 15px;
-  margin: 20px auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
 }
 
-.searchInput {
-  flex: 2;
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
-  transition: all 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.banner {
+  width: 100%; 
+  height: 400px;
+  background-image: url('../image/2-2.jpg');
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+  text-align: center; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  overflow: hidden;
+  margin-bottom: 5%;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
-.searchInput:focus {
-  border-color: #c27e3a; /* رنگ مرتبط با زعفران */
-  box-shadow: 0 4px 8px rgba(194, 126, 58, 0.2);
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.categorySelect {
-  flex: 1;
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
-  background-color: #fff;
-  transition: all 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.bannercontent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: 'vazir', sans-serif;
 }
 
-.categorySelect:hover,
-.categorySelect:focus {
-  border-color: #c27e3a; /* رنگ مرتبط با زعفران */
-  background-color: #fdf3e5;
-  box-shadow: 0 4px 8px rgba(194, 126, 58, 0.2);
+.bannercontent h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.5;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
-.filterContainer > * {
-  transition: transform 0.2s ease-in-out;
+.bannercontent p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+  opacity: 0.8;
 }
 
-.filterContainer > *:hover {
-  transform: scale(1.05);
+/* استایل ریسپانسیو */
+@media (max-width: 1200px) {
+  .homecontainer h2 {
+      font-size: 2rem;
+  }
+
+  .productscontainer {
+      width: 90%;
+  }
+
+  .banner {
+      height: 350px;
+  }
+
+  .bannercontent h1 {
+      font-size: 2rem;
+  }
+
+  .bannercontent p {
+      font-size: 1rem;
+  }
 }
 
+@media (max-width: 992px) {
+  .homecontainer h2 {
+      font-size: 1.8rem;
+  }
+
+  .productscontainer {
+      width: 95%;
+  }
+
+  .banner {
+      height: 300px;
+  }
+
+  .bannercontent h1 {
+      font-size: 1.8rem;
+  }
+
+  .bannercontent p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homecontainer h2 {
+      font-size: 1.5rem;
+  }
+
+  .productscontainer {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .banner {
+      height: 250px;
+  }
+
+  .bannercontent h1 {
+      font-size: 1.5rem;
+  }
+
+  .bannercontent p {
+      font-size: 0.9rem;
+  }
+
+  .filterContainer {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .searchInput, .categorySelect {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .homecontainer h2 {
+      font-size: 1.2rem;
+  }
+
+  .banner {
+      height: 200px;
+  }
+
+  .bannercontent h1 {
+      font-size: 1.2rem;
+  }
+
+  .bannercontent p {
+      font-size: 0.9rem;
+  }
+
+  .filterContainer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .searchInput, .categorySelect {
+      width: 90%;
+      margin-bottom: 15px;
+  }
+}
