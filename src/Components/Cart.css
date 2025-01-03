@@ -1,0 +1,58 @@
+/* کلیات صفحه سبد خرید */
+.cart-container {
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  /* سرصفحه سبد خرید */
+  .cart-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #d1544a; /* رنگ زرشک برای جذابیت */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* محتوای سبد خرید */
+  .cart-content p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* دکمه پرداخت */
+  .cart-footer {
+    text-align: center;
+  }
+  
+  .btn-checkout {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #d1544a; /* رنگ زرشک */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-checkout:hover {
+    background-color: #f2a900; /* رنگ زعفرانی برای hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-checkout:active {
+    transform: scale(0.98); /* کوچک شدن دکمه هنگام کلیک */
+  }
+  

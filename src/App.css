@@ -1,0 +1,5 @@
+body {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl; 
+    margin-top: 5px;/* تنظیم راست‌چین بودن متن برای فارسی */
+  }

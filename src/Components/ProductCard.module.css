@@ -1,0 +1,64 @@
+/* استایل کلی کارت محصول */
+.productcard {
+  background-color: #f9f9f9; /* پس زمینه روشن برای زیبایی */
+  border: 1px solid #e4e4e4; /* مرز کارت با رنگ خاکی روشن */
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 10px; /* گوشه‌های گرد برای یک ظاهر مدرن */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه ملایم برای برجسته شدن */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* انتقال نرم برای hover */
+}
+
+.productcard:hover {
+  transform: translateY(-5px); /* بالا رفتن کارت هنگام hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* سایه برجسته‌تر هنگام hover */
+}
+
+/* استایل تصویر */
+.productcard img {
+  width: 200px; /* اندازه بزرگ‌تر تصویر */
+  height: 150px;
+  object-fit: cover; /* تنظیم اندازه تصویر به صورت مناسب */
+  border-radius: 8px; /* گوشه‌های گرد تصویر */
+  margin-bottom: 10px; /* فاصله از دیگر اجزا */
+}
+
+/* عنوان محصول */
+.productcard h3 {
+  color: #d23b3b; /* رنگ زرشکی برای عنوان */
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* توضیحات محصول */
+.productcard p {
+  font-size: 1rem;
+  color: #555; /* رنگ خاکی برای متن */
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* قیمت محصول */
+.productcard p strong {
+  font-size: 1.2rem;
+  color: #f2a900; /* رنگ زعفرانی برای قیمت */
+}
+
+/* دکمه "افزودن به سبد خرید" */
+.productcard button {
+  background-color: #d23b3b; /* رنگ زرشکی برای دکمه */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px; /* دکمه با گوشه‌های گرد */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* تغییر رنگ دکمه با hover */
+}
+
+.productcard button:hover {
+  background-color: #f2a900; /* رنگ زعفرانی هنگام hover */
+  color: #d23b3b; /* تغییر رنگ متن دکمه */
+}

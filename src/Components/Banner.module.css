@@ -1,0 +1,47 @@
+.banner {
+    width: 100%; /* عرض کامل صفحه */
+    height: 400px; /* ارتفاع بنر */
+    background-image: url('../image/2-2.jpg'); /* مسیر تصویر */
+    background-size: cover; /* تصویر کامل بدون تغییر تناسب */
+    background-position: center; /* تصویر در مرکز */
+    display: flex; /* استفاده از Flexbox */
+    align-items: center; /* تراز عمودی */
+    justify-content: center; /* تراز افقی */
+    position: relative;
+    text-align: center; /* تراز متن در وسط */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* سایه زیبا */
+    overflow: hidden;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* لایه شفاف روی تصویر */
+    z-index: 1;
+  }
+  
+  .bannercontent {
+    position: relative;
+    z-index: 2; /* متن بالای لایه شفاف */
+    color: white;
+    font-family: 'b-nazanin', sans-serif; /* فونت فارسی */
+  }
+  
+  .bannercontent h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.5;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* سایه متن */ 
+    
+}
+  
+  .bannercontent p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    opacity: 0.8;
+  }
+  

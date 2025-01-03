@@ -1,0 +1,82 @@
+/* استایل کلی برای صفحه تماس با ما */
+.contactcontainer {
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+  
+  .contactcontainer h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #d1544a; /* رنگ زرشک */
+    margin-bottom: 20px;
+  }
+  
+  /* فرم تماس */
+  .contactform {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formgroup {
+    margin-bottom: 20px;
+  }
+  
+  .formgroup label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .formgroup input,
+  .formgroup textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  .formgroup input:focus,
+  .formgroup textarea:focus {
+    outline: none;
+    border-color: #d1544a; /* رنگ زرشک هنگام فوکوس */
+  }
+  
+  .formgroup textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .btnsubmit {
+    padding: 12px 20px;
+    background-color: #d1544a; /* رنگ زرشک */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btnsubmit:hover {
+    background-color: #f2a900; /* رنگ زعفرانی برای hover */
+  }
+  
+  .btnsubmit:active {
+    transform: scale(0.98); /* کوچک شدن دکمه هنگام کلیک */
+  }
+  

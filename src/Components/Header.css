@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  background-color: #d23b3b; 
+  padding: 10px 20px;
+  height: 70px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  position: relative; /* ثابت کردن هدر */
+  top: 0;
+  width: 85%;
+  z-index: 1000; 
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 2%;
+}
+  
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* فاصله بین لینک‌ها */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107; /* رنگ لینک هنگام هاور */
+}
+
+.header-title {
+  font-size: 2rem;
+  font-family: 'b-nazanin', sans-serif; /* فونت فارسی */
+  color: white;
+  text-align: center; /* تراز وسط */
+  margin: 0;
+  margin-right: 8%;
+}
+
+.logo img {
+  width: 50px; /* اندازه لوگو */
+  height: auto;
+  border-radius: 50%; /* اگر می‌خواهید لوگو دایره‌ای باشد */
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end; /* تراز به سمت راست */
+}
