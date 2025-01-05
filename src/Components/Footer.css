@@ -1,15 +1,15 @@
 /* استایل کلی فوتر */
 .footer {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: #d23b3b; /* رنگ زرشک */
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     position: relative;
     bottom: 0;
-    width: 85%;
+    width: 98%;
     margin: 0 auto;
-    border-radius: 10px 10px 0 0;
+    /* border-radius: 10px 10px 0 0; */
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15); /* سایه نرم و ظریف */
     transition: background-color 0.3s ease; /* انیمیشن برای تغییر رنگ پس‌زمینه */
   }

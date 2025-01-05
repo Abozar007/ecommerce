@@ -4,11 +4,11 @@
   justify-content: space-between;
   background-color: #d23b3b; 
   padding: 10px 20px;
-  height: 70px; 
+  height: 50px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   position: relative; /* ثابت کردن هدر */
   top: 0;
-  width: 85%;
+  width: 98%;
   z-index: 1000; 
   margin: 0 auto;
   border-radius: 0 0 10px 10px;

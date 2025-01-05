@@ -8,6 +8,7 @@
   border-radius: 10px; /* گوشه‌های گرد برای یک ظاهر مدرن */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه ملایم برای برجسته شدن */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* انتقال نرم برای hover */
+  position: relative;
 }
 
 .productcard:hover {
@@ -61,4 +62,42 @@
 .productcard button:hover {
   background-color: #f2a900; /* رنگ زعفرانی هنگام hover */
   color: #d23b3b; /* تغییر رنگ متن دکمه */
+}
+
+.tooltip {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 230px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+  font-family: vazir, sans-serif;
+}
+
+.productcard:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.tooltip p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.5;
+  font-weight: bold;
 }
