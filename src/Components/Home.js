@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 import ProductCard from './ProductCard';
 import styles from './Home.module.css';
@@ -32,6 +33,7 @@ const productList = [
 ];
 
 const Home = () => {
+ 
   const bannerImages = [
     {id :1, src:ban1, alt:"بنر1"},
     {id :1, src:ban2 , alt:"بنر2"},
@@ -103,7 +105,7 @@ const Home = () => {
       {/* نمایش محصولات */}
       <div className={styles.productscontainer}>
         {filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product}/>
         ))}
       </div>
     </div>

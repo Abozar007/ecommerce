@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Cart.css';
+import { useCart } from '../CartContext';
 
 const Cart = () => {
-  const location = useLocation();
-  const cartItems = location.state?.cart || [];
+  // const location = useLocation();
+  const {cartItems, removeFromCart} = useCart();
 
   return (
     <div className="cart-container">
@@ -16,9 +17,11 @@ const Cart = () => {
           <p>سبد خرید شما خالی است.</p>
         ) : (
           <ul>
-            {cartItems.map((item, index) => (
-              <li key={index}>
+            {cartItems.map((item) => (
+              <li key={item.id}>
                 {item.name} - {item.price} تومان
+                <p>تعداد : {item.quantity}</p>
+                <button onClick={() => removeFromCart(item.id)}>حذف</button>
               </li>
             ))}
           </ul>
