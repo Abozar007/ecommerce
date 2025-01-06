@@ -30,8 +30,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-color: #fff;
     border-radius: 50px;
   }
@@ -90,4 +90,35 @@
   .btnsubmit:active {
     transform: scale(0.98); /* کوچک شدن دکمه هنگام کلیک */
   }
+  .btnedit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
+  .btnsubmit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnedit:hover,
+  .btnsubmit:hover,
+  .btncancel:hover {
+    opacity: 0.9;
+  }
+  .btncancel {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
