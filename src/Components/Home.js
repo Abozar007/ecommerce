@@ -17,8 +17,8 @@ import img6 from '../image/zer2.jpg';
 import img7 from '../image/zaf2.webp';
 import img8 from '../image/anab1.jpg';
 
-import ban1 from '../image/bozar2.jpg.webp';
-import ban2 from '../image/ghale.jpg';
+import ban1 from '../image/bozar3.jpg';
+import ban2 from '../image/ghale2.jpg';
 import ban3 from '../image/masjed2.jpg';
 
 const productList = [

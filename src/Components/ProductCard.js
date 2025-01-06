@@ -15,6 +15,7 @@ import { useCart } from '../CartContext';
     const [ProductCard, setProductCard] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [addedToCartMessage, setAddedToCartMessage] = useState("");
     const { addToCart } = useCart();
   
     useEffect(() => {
@@ -31,6 +32,13 @@ import { useCart } from '../CartContext';
   
       getProducts();
     }, []);
+    const handleAddToCart = (product) => {
+      addToCart(product);
+      setAddedToCartMessage("محصول به سبد خرید اضافه شد!"); // تنظیم پیام
+      setTimeout(() => {
+        setAddedToCartMessage(""); // مخفی کردن پیام بعد از 3 ثانیه
+      }, 3000);
+    };
   
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
@@ -46,7 +54,9 @@ import { useCart } from '../CartContext';
           <p>{product.properties}</p>
         </div>
       )}
-      <button onClick={() => addToCart(product)}>اضافه به سبد خرید</button>
+      <button onClick={() =>  handleAddToCart(product)} >اضافه به سبد خرید</button>
+
+      {addedToCartMessage && <div className={styles.cartMessage}>{addedToCartMessage}</div>}
     </div>
   );
 };
