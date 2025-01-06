@@ -16,6 +16,9 @@ import img5 from '../image/zer1.jpg';
 import img6 from '../image/zer2.jpg';
 import img7 from '../image/zaf2.webp';
 import img8 from '../image/anab1.jpg';
+import img9 from '../image/habe1.jpg';
+import img10 from '../image/anab2.jpg';
+import img11 from '../image/zaf5.jpg';
 
 import ban1 from '../image/bozar3.jpg';
 import ban2 from '../image/ghale2.jpg';
@@ -29,7 +32,10 @@ const productList = [
   { id: 5, name: 'آب زرشک تازه', category: 'زرشک', description: '1 لیتری', price: '90,000',properties: 'مفید برای کبد و صفرا',  image: img3 },
   { id: 6, name: 'زعفران نگین', category: 'زعفران', description: 'مثقال', price: '380,000',properties: 'افزایش انرژی و بهبود خلق‌وخو',  image: img4 },
   { id: 7, name: 'زعفران گل', category: 'زعفران', description: 'کیلویی', price: '850,000', properties: 'کاهش استرس و بهبود خواب', image: img7 },
-  { id: 8, name: 'عناب تازه', category: 'عناب', description: 'کیلویی', price: '80,000', properties: 'تقویت سیستم ایمنی و کاهش استرس', image: img8 },
+  { id: 8, name: 'زعفران کادویی', category: 'زعفران', description: 'بسته بندی', price: '890,000', properties: 'مناسب برای مناسبت ها', image: img11 },
+  { id: 9, name: 'عناب تازه', category: 'عناب', description: 'کیلویی', price: '80,000', properties: 'تقویت سیستم ایمنی و کاهش استرس', image: img8 },
+  { id: 10, name: 'عناب خشک شده', category: 'عناب', description: 'کیلویی', price: '100,000', properties: 'تقویت سیستم ایمنی و کاهش استرس', image: img10 },
+  { id: 11, name: ' حبه عناب ', category: 'عناب', description: 'نیم کیلو', price: '130,000', properties: 'جایگزین مناسب مواد قندی بوده و برای تنظیم قند خون مفید است.', image: img9 },
 ];
 
 const Home = () => {

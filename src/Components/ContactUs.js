@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './ContactUs.css'; // فایل استایل جداگانه
+import { FaUser } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom'; // استفاده از useNavigate
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    message: '',
+    number: '',
   });
+
+  const navigate = useNavigate(); // استفاده از useNavigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,12 +22,14 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Your message has been sent!');
-    // اینجا می‌توانید درخواست ارسال فرم به سرور را اضافه کنید
+    // هدایت به صفحه پروفایل
+    navigate('/profile');
   };
 
   return (
     <div className="contactcontainer">
       <form className="contactform" onSubmit={handleSubmit}>
+        <FaUser className='icon' />
         <div className="formgroup">
           <label htmlFor="name">نام و نام خانوادگی</label>
           <input
@@ -36,27 +41,16 @@ const ContactUs = () => {
             placeholder="Your Name"
             required
           />
-          <br />
-          <label htmlFor="name">شماره همراه</label>
+        </div>
+        <div className="formgroup">
+          <label htmlFor="number">شماره همراه</label>
           <input
             type="text"
             id="number"
-            name="Number"
-            value={formData.Number}
+            name="number"
+            value={formData.number}
             onChange={handleChange}
             placeholder="Your Number"
-            required
-          />
-        </div>
-        <div className="formgroup">
-          <label htmlFor="email">ایمیل</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
             required
           />
         </div>
@@ -65,6 +59,5 @@ const ContactUs = () => {
     </div>
   );
 };
+
 export default ContactUs;
-
-
