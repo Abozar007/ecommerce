@@ -1,5 +1,5 @@
 /* کلیات صفحه سبد خرید */
-.cart-container {
+.cartcontainer {
     padding: 40px;
     background-color: #f7f7f7;
     border-radius: 10px;
@@ -13,7 +13,7 @@
   }
   
   /* سرصفحه سبد خرید */
-  .cart-header h2 {
+  .cartheader h2 {
     font-size: 2rem;
     font-weight: 600;
     color: #d1544a; /* رنگ زرشک برای جذابیت */
@@ -22,7 +22,7 @@
   }
   
   /* محتوای سبد خرید */
-  .cart-content {
+  .cartcontent {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -30,18 +30,18 @@
     margin-top: 20px;
   }
   
-  .cart-content p {
+  .cartcontent p {
     font-size: 18px;
     color: #333;
     text-align: center;
   }
   
-  .cart-content ul {
+  .cartcontent ul {
     list-style-type: none;
     padding: 0;
   }
   
-  .cart-content li {
+  .cartcontent li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,36 +53,38 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
   
-  .cart-content li:hover {
+  .cartcontent li:hover {
     background-color: #f1f1f1;
   }
   
-  .cart-content li button {
+  .cartcontent li button {
     background-color: #ff4d4f;
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 20px;
     transition: background-color 0.3s;
   }
   
-  .cart-content li button:hover {
+  .cartcontent li button:hover {
     background-color: #e30000;
   }
   
-  .cart-content li p {
+  .cartcontent li p {
     font-size: 16px;
     color: #555;
+    margin: 0 50px;
   }
   
   
   /* دکمه پرداخت */
-  .cart-footer {
+  .cartfooter {
     text-align: center;
   }
   
-  .btn-checkout {
+  .btncheckout {
     padding: 12px 25px;
     font-size: 1rem;
     font-weight: 600;
@@ -95,12 +97,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .btn-checkout:hover {
+  .btncheckout:hover {
     background-color: #f2a900; /* رنگ زعفرانی برای hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
   
-  .btn-checkout:active {
+  .btncheckout:active {
     transform: scale(0.98); /* کوچک شدن دکمه هنگام کلیک */
   }
   

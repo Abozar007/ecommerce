@@ -1,18 +1,19 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import './Cart.css';
+// import { useLocation } from 'react-router-dom';
+import styles from './Cart.module.css';
 import { useCart } from '../CartContext';
+
 
 const Cart = () => {
   // const location = useLocation();
   const {cartItems, removeFromCart} = useCart();
 
   return (
-    <div className="cart-container">
-      <div className="cart-header">
+    <div className={styles.cartcontainer}>
+      <div className={styles.cartheader}>
         <h2>سبد خرید</h2>
       </div>
-      <div className="cart-content">
+      <div className={styles.cartcontent}>
         {cartItems.length === 0 ? (
           <p>سبد خرید شما خالی است.</p>
         ) : (
@@ -27,8 +28,8 @@ const Cart = () => {
           </ul>
         )}
       </div>
-      <div className="cart-footer">
-        <button className="btn-checkout">پرداخت</button>
+      <div className={styles.cartfooter}>
+        <button className={styles.btncheckout}>پرداخت</button>
       </div>
     </div>
   );

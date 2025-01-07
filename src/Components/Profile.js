@@ -7,7 +7,7 @@ const Profile = () => {
   const [formData, setFormData] = useState({
     name: 'abozarvakili',
     number: '09308957031',
-    address: 'tehran,iran',
+    address: '',
     email: '',
   });
 
@@ -69,17 +69,6 @@ const Profile = () => {
           />
         </div>
 
-        <div className={styles.formgroup}>
-          <label htmlFor="address">آدرس منزل</label>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            value={isEditing ? editData.address : formData.address}
-            onChange={handleChange}
-            disabled={!isEditing}
-          />
-        </div>
 
         <div className={styles.formgroup}>
           <label htmlFor="email">ایمیل</label>
@@ -90,6 +79,17 @@ const Profile = () => {
             value={isEditing ? editData.email : formData.email}
             onChange={handleChange}
             placeholder='d35r56@example.com'
+            disabled={!isEditing}
+          />
+        </div>
+        <div className={styles.formgroup}>
+          <label htmlFor="address">آدرس منزل</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            value={isEditing ? editData.address : formData.address}
+            onChange={handleChange}
             disabled={!isEditing}
           />
         </div>
