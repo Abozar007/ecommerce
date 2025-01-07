@@ -72,13 +72,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f8f8f8;
+  background-color: var(--filter-bg);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .searchInput {
   flex: 2;
+  background-color: var(--filter-color-text);
+  color: var(--filter-text-color);
   padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -100,7 +102,8 @@
   border-radius: 8px;
   font-size: 16px;
   outline: none;
-  background-color: #fff;
+  background-color: var(--filter-color-text);
+  color: var(--filter-text-color);
   transition: all 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -108,7 +111,7 @@
 .categorySelect:hover,
 .categorySelect:focus {
   border-color: #c27e3a; /* رنگ مرتبط با زعفران */
-  background-color: #fdf3e5;
+  background-color: var(--filter-color-text);
   box-shadow: 0 4px 8px rgba(194, 126, 58, 0.2);
 }
 

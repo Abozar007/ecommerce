@@ -1,8 +1,8 @@
 /* استایل کلی فوتر */
 .footer {
     padding: 20px 20px;
-    background-color: #d23b3b; /* رنگ زرشک */
-    color: #fff;
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
     font-family: 'Roboto', sans-serif;
     text-align: center;
     position: relative;

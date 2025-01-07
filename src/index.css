@@ -6,9 +6,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  }
+  :root {
+    --bg-color: white;
+    --text-color: #000000;
+    --header-footer-bg: #d23b3b;
+    --header-footer-text: #ffffff;
+  }
+  
+  .dark-theme {
+    --bg-color: #121212;
+    --text-color: white;
+    --header-footer-bg: #861d1d;
+    --filter-bg: none;
+    --filter-color-text: #000000;
+    --header-footer-text: #ffffff;
+    --filter-text-color: white
+  }
+button {
+  background-color: var(--bg-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+button:hover {
+  opacity: 0.8;
 }

@@ -2,7 +2,8 @@
   display: flex;
   align-items: center; 
   justify-content: space-between;
-  background-color: #d23b3b; 
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
   padding: 10px 20px;
   height: 50px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
